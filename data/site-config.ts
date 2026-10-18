@@ -4,8 +4,10 @@ export interface SocialProfile {
 }
 
 const configuredSocialProfiles: SocialProfile[] = [
-  { label: "LinkedIn", url: null },
-  { label: "Dribbble", url: null },
+  { label: "LinkedIn", url: "https://www.linkedin.com/in/parvathy-s-kumar-psk" },
+  { label: "Behance", url: "https://www.behance.net/parvathyskumar2" },
+  { label: "Dribbble", url: "https://dribbble.com/parvathy_s_kumar" },
+  { label: "Instagram", url: "https://www.instagram.com/___parvathy_________?srtk=cGFrNzl5eGhhOWRo" },
 ];
 
 export const siteConfig = {

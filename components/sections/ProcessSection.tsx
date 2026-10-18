@@ -1,8 +1,24 @@
-import { ArrowRight } from "lucide-react";
 import { Container } from "@/components/ui/Container";
 import { Reveal } from "@/components/ui/Reveal";
 import { SectionHeading } from "@/components/ui/SectionHeading";
-import { processSteps } from "@/data/process";
+
+const experience = [
+  {
+    company: "Kallisto Innovations (Trivandrum)",
+    role: "UI/UX Designer",
+    duration: "Mar 2026 - Present",
+  },
+  {
+    company: "Nexotech Solutions (Alappuzha)",
+    role: "UI/UX Designer (intern)",
+    duration: "Sep 2025 – Mar 2026",
+  },
+  {
+    company: "Seqato Software Solutions (Trivandrum)",
+    role: "Software Engineer QA",
+    duration: "Apr 2022 – Sep 2025",
+  },
+];
 
 export function ProcessSection() {
   return (
@@ -11,28 +27,24 @@ export function ProcessSection() {
         <Reveal>
           <SectionHeading
             id="process-title"
-            eyebrow="A thoughtful process"
-            title="Make room for the right answer."
-            description="A flexible approach that keeps the problem, the people, and the details in view."
-            number="03"
+            eyebrow="Experience"
+            title="The path so far."
+            description="Every role has shaped the way I think, design, and solve problems."
           />
         </Reveal>
-        <ol className="process-list">
-          {processSteps.map((step, index) => (
-            <Reveal delay={index * 0.045} key={step.number}>
-              <li className="process-step">
-                <span className="process-step__number">{step.number}</span>
-                <div className="process-step__content">
-                  <h3>{step.title}</h3>
-                  <p>{step.description}</p>
+        <Reveal className="experience-list-reveal">
+          <ol className="experience-list">
+            {experience.map((item) => (
+              <li className="experience-entry" key={item.company}>
+                <h3 className="experience-entry__company">{item.company}</h3>
+                <div className="experience-entry__details">
+                  <p className="experience-entry__role">{item.role}</p>
+                  <p className="experience-entry__duration">{item.duration}</p>
                 </div>
-                {index < processSteps.length - 1 ? (
-                  <ArrowRight aria-hidden="true" className="process-step__arrow" size={17} strokeWidth={1.4} />
-                ) : null}
               </li>
-            </Reveal>
-          ))}
-        </ol>
+            ))}
+          </ol>
+        </Reveal>
       </Container>
     </section>
   );

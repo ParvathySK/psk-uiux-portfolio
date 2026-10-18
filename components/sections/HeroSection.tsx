@@ -1,6 +1,15 @@
 import Image from "next/image";
 import { ArrowUpRight } from "lucide-react";
 import { Container } from "@/components/ui/Container";
+import { SocialLinks } from "@/components/ui/SocialLinks";
+
+const heroPixels = Array.from({ length: 72 }, (_, index) => ({
+  x: (index * 47 + 13) % 100,
+  y: 8 + ((index * 29 + 17) % 84),
+  size: index % 8 === 0 ? 4 : index % 3 === 0 ? 3 : 2,
+  color: ["#d4aa4b", "#df978b", "#73aead"][index % 3],
+  delay: -(((index * 13) % 42) / 10),
+}));
 
 export function HeroSection() {
   return (
@@ -26,10 +35,26 @@ export function HeroSection() {
             preload
             sizes="(max-width: 720px) 100vw, (max-width: 980px) 50vw, 40vw"
           />
-          <a className="hero-cta" href="#contact">
-            <span>Hire me? (Why not?)</span>
+          <a className="hero-cta" href="#work">
+            <span>Hire me (Why not?)</span>
             <ArrowUpRight aria-hidden="true" size={18} strokeWidth={2.2} />
           </a>
+          <SocialLinks className="hero-social-links" />
+          <div className="hero-pixel-field" aria-hidden="true">
+            {heroPixels.map((pixel, index) => (
+              <span
+                key={index}
+                style={{
+                  left: `${pixel.x}%`,
+                  top: `${pixel.y}%`,
+                  width: `${pixel.size}px`,
+                  height: `${pixel.size}px`,
+                  backgroundColor: pixel.color,
+                  animationDelay: `${pixel.delay}s`,
+                }}
+              />
+            ))}
+          </div>
         </figure>
 
         <aside className="hero-side-note" aria-labelledby="hero-side-title">

@@ -28,32 +28,44 @@ export function SelectedWorkSection({ embedded = false }: { embedded?: boolean }
             <article className="work-showcase-card">
               <div className="work-showcase-card__visual work-showcase-card__visual--project">
                 <div className="featured-project-preview" role="img" aria-label={`${featuredProject.name} project feature overview`}>
-                  <div className="featured-project-preview__board">
-                    <div className="featured-project-preview__feature featured-project-preview__feature--checkout">
-                      <div className="featured-project-preview__illustration" aria-hidden="true"><i /><i /><i /><b /></div>
-                      <span><strong>Predictable recurring revenue</strong><small>Flexible plans that grow with you.</small></span>
+                  <div className="featured-project-preview__stage">
+                    <div className="portfolio-screen portfolio-screen--dashboard" aria-hidden="true">
+                      <div className="portfolio-screen__chrome"><i /><i /><i /><span>sellmate.app / overview</span></div>
+                      <div className="portfolio-dashboard">
+                        <div className="portfolio-dashboard__rail"><b>S</b><i /><i /><i /><i /></div>
+                        <div className="portfolio-dashboard__content">
+                          <div className="portfolio-dashboard__heading"><span>OVERVIEW</span><b>•••</b></div>
+                          <strong>Good morning, Parvathy</strong>
+                          <div className="portfolio-dashboard__metrics"><i /><i /><i /></div>
+                          <div className="portfolio-dashboard__chart"><span /><svg viewBox="0 0 220 54" preserveAspectRatio="none"><path d="M0 45 C20 39 28 14 48 27 S78 41 99 22 S129 35 150 17 S178 31 195 11 S210 18 220 5" /></svg></div>
+                          <div className="portfolio-dashboard__rows"><i /><i /><i /></div>
+                        </div>
+                      </div>
                     </div>
-                    <div className="featured-project-preview__feature featured-project-preview__feature--customers">
-                      <div className="featured-project-preview__illustration" aria-hidden="true"><i /><i /><i /><b /></div>
-                      <span><strong>Every customer, in sync</strong><small>People and payment details together.</small></span>
+                    <div className="portfolio-screen portfolio-screen--website" aria-hidden="true">
+                      <div className="portfolio-screen__chrome"><i /><i /><i /><span>studio / home</span></div>
+                      <div className="portfolio-website"><b>STUDIO NORTH</b><span>Made for<br />everyday.</span><i /><small>EXPLORE COLLECTION ↗</small></div>
                     </div>
-                    <div className="featured-project-preview__feature featured-project-preview__feature--profiles">
-                      <div className="featured-project-preview__illustration" aria-hidden="true"><i /><i /><i /><b /></div>
-                      <span><strong>One clear customer view</strong><small>Find the details that matter, faster.</small></span>
-                    </div>
-                    <div className="featured-project-preview__feature featured-project-preview__feature--payments">
-                      <div className="featured-project-preview__illustration" aria-hidden="true"><i /><i /><i /><b /></div>
-                      <span><strong>Fewer failed payments</strong><small>Smart retries keep revenue moving.</small></span>
-                    </div>
-                    <div className="featured-project-preview__feature featured-project-preview__feature--growth">
-                      <div className="featured-project-preview__illustration" aria-hidden="true"><i /><i /><i /><b /></div>
-                      <span><strong>Growth at a glance</strong><small>Turn live numbers into next steps.</small></span>
+                    <div className="portfolio-phone" aria-hidden="true">
+                      <div className="portfolio-phone__speaker" />
+                      <div className="portfolio-phone__screen">
+                        <div className="portfolio-phone__top"><b>9:41</b><i>•••</i></div>
+                        <span>YOUR BALANCE</span>
+                        <strong>$8,240</strong>
+                        <div className="portfolio-phone__chart"><i /><i /><i /><i /><i /><i /></div>
+                        <div className="portfolio-phone__action"><b>↗</b><b>＋</b><b>•••</b></div>
+                        <div className="portfolio-phone__line" /><div className="portfolio-phone__line portfolio-phone__line--short" />
+                      </div>
                     </div>
                   </div>
+                  <div className="featured-project-preview__categories"><span>Dashboards</span><span>Mobile apps</span><span>Websites</span></div>
                 </div>
               </div>
-              <div className="work-showcase-card__content work-showcase-card__content--featured">
-                <h3>Featured projects</h3>
+              <div className="work-showcase-card__content">
+                <div className="work-showcase-card__copy">
+                  <h3>Featured projects</h3>
+                  <p>Dashboards · apps · websites</p>
+                </div>
                 <span className="work-showcase-card__arrow" aria-hidden="true" />
               </div>
             </article>
@@ -63,34 +75,43 @@ export function SelectedWorkSection({ embedded = false }: { embedded?: boolean }
             <article className="work-showcase-card">
               <div className="work-showcase-card__visual work-showcase-card__visual--system">
                 <div className="design-language-preview">
-                  <div className="design-language-preview__page design-language-preview__page--left" aria-hidden="true">
-                    <span className="design-language-preview__page-kicker" />
-                    <span className="design-language-preview__page-line design-language-preview__page-line--long" />
-                    <span className="design-language-preview__page-line" />
-                    <span className="design-language-preview__page-block" />
-                    <span className="design-language-preview__page-line design-language-preview__page-line--short" />
-                  </div>
-                  <div className="design-language-preview__page design-language-preview__page--right" aria-hidden="true">
-                    <span className="design-language-preview__page-kicker" />
-                    <span className="design-language-preview__page-line design-language-preview__page-line--long" />
-                    <span className="design-language-preview__page-block design-language-preview__page-block--small" />
-                    <span className="design-language-preview__page-line" />
-                  </div>
-                  <div className="design-language-preview__book" role="img" aria-label="Design language and UI system guide">
-                    <span>PSK · DESIGN GUIDE</span>
-                    <strong>Thoughtful<br />by design.</strong>
-                    <span className="design-language-preview__book-swatches" aria-hidden="true">
-                      {systemColors.slice(0, 4).map((color) => (
-                        <i key={color.name} style={{ backgroundColor: color.color }} />
+                  <div className="design-language-preview__palette">
+                    <div className="design-language-preview__section-label"><span>COLOR PALETTE</span><b>05 TOKENS</b></div>
+                    <div className="design-language-preview__swatches" aria-hidden="true">
+                      {systemColors.map((color) => (
+                        <span key={color.name}><i style={{ backgroundColor: color.color }} /><small>{color.name}</small></span>
                       ))}
-                    </span>
-                    <small>Color, type &amp; components</small>
+                    </div>
+                  </div>
+                  <div className="design-language-preview__middle">
+                    <div className="design-language-preview__type">
+                      <span className="design-language-preview__section-label">TYPE / MANROPE</span>
+                      <strong>Aa</strong>
+                      <small>Thoughtful by design</small>
+                      <i /><i />
+                    </div>
+                    <div className="design-language-preview__controls">
+                      <span className="design-language-preview__section-label">BUTTONS &amp; ICONS</span>
+                      <span className="design-language-preview__button">Explore <b aria-hidden="true">↗</b></span>
+                      <div className="design-language-preview__icon-row" aria-hidden="true"><i>⌕</i><i>＋</i><i>♡</i></div>
+                    </div>
+                  </div>
+                  <div className="design-language-preview__component">
+                    <div className="design-language-preview__component-heading"><span>COMPONENT / CARD</span><b>01</b></div>
+                    <div className="design-language-preview__sample-card">
+                      <i aria-hidden="true">✦</i>
+                      <span><strong>Project overview</strong><small>Everything in one place</small></span>
+                      <b>↗</b>
+                    </div>
                   </div>
                 </div>
               </div>
               <div className="work-showcase-card__content">
-                <h3>Design system &amp; style</h3>
-                <p>Color · type · components</p>
+                <div className="work-showcase-card__copy">
+                  <h3>Design system &amp; style</h3>
+                  <p>Color · type · components</p>
+                </div>
+                <span className="work-showcase-card__arrow" aria-hidden="true" />
               </div>
             </article>
           </Reveal>
@@ -99,27 +120,38 @@ export function SelectedWorkSection({ embedded = false }: { embedded?: boolean }
             <article className="work-showcase-card">
               <div className="work-showcase-card__visual work-showcase-card__visual--journey">
                 <div className="journey-preview">
-                  <div className="journey-preview__topline">
-                    <span>MY DESIGN JOURNEY</span>
-                    <span>01 → 02</span>
-                  </div>
                   <div className="journey-preview__route">
-                    <div className="journey-preview__step">
-                      <span>01 / FOUNDATION</span>
-                      <strong>Software<br />+ QA</strong>
+                    <div className="journey-preview__step journey-preview__step--qa">
+                      <span className="journey-preview__step-number">01</span>
+                      <div className="journey-preview__step-copy">
+                        <span className="journey-preview__step-label">FOUNDATION · QA</span>
+                        <strong>Software engineering<br />+ QA</strong>
+                        <small>Logic · testing · detail</small>
+                      </div>
                     </div>
-                    <span className="journey-preview__arrow" aria-hidden="true">→</span>
+                    <div className="journey-preview__bridge" aria-hidden="true">
+                      <span />
+                      <b>THE SHIFT</b>
+                      <i>↓</i>
+                      <span />
+                    </div>
                     <div className="journey-preview__step journey-preview__step--design">
-                      <span>02 / NOW</span>
-                      <strong>UI/UX<br />design</strong>
+                      <span className="journey-preview__step-number">02</span>
+                      <div className="journey-preview__step-copy">
+                        <span className="journey-preview__step-label">TODAY · DESIGN</span>
+                        <strong>UI/UX design</strong>
+                        <small>Research · flows · interfaces</small>
+                      </div>
                     </div>
                   </div>
-                  <span className="journey-preview__caption">From checking experiences to shaping them.</span>
                 </div>
               </div>
               <div className="work-showcase-card__content">
-                <h3>From QA to design</h3>
-                <p>My journey · process</p>
+                <div className="work-showcase-card__copy">
+                  <h3>From QA to design</h3>
+                  <p>My journey · process</p>
+                </div>
+                <span className="work-showcase-card__arrow" aria-hidden="true" />
               </div>
             </article>
           </Reveal>
