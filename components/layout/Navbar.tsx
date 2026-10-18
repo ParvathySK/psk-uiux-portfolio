@@ -1,6 +1,6 @@
-import { ArrowUpRight } from "lucide-react";
 import Link from "next/link";
 import { MobileMenu } from "@/components/layout/MobileMenu";
+import { ResumeDownloadButton } from "@/components/layout/ResumeDownloadButton";
 import { navigationItems } from "@/data/navigation";
 import { siteConfig } from "@/data/site-config";
 
@@ -19,11 +19,10 @@ export function Navbar() {
               {item.label}
             </Link>
           ))}
-          {siteConfig.resumeUrl ? (
-            <a className="resume-link" href={siteConfig.resumeUrl} download>
-              Resume <ArrowUpRight aria-hidden="true" size={14} />
-            </a>
-          ) : null}
+          <ResumeDownloadButton
+            className="resume-button"
+            resumeUrl={siteConfig.resumeUrl}
+          />
         </nav>
 
         <MobileMenu items={navigationItems} resumeUrl={siteConfig.resumeUrl} />

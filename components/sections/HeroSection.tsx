@@ -1,52 +1,46 @@
-import { ArrowDown, ArrowDownRight, ArrowUpRight } from "lucide-react";
-import Link from "next/link";
+import Image from "next/image";
+import { ArrowUpRight } from "lucide-react";
 import { Container } from "@/components/ui/Container";
-import { siteConfig } from "@/data/site-config";
 
 export function HeroSection() {
   return (
     <section className="hero-section" aria-labelledby="hero-title">
       <Container className="hero-grid" size="wide">
         <div className="hero-copy">
-          <p className="hero-eyebrow">
-            <span className="status-dot" aria-hidden="true" />
-            {siteConfig.role}
-          </p>
           <h1 id="hero-title">
-            Designing digital products <em>with clarity.</em>
+            <span>Let's make</span>
+            <span>it pretty!</span>
           </h1>
           <p className="hero-description">
-            I bring user-centered thinking, thoughtful structure, and considered visual design to
-            digital experiences.
+            Where creativity meets pixels. 🎨
           </p>
-          <div className="hero-actions">
-            <Link className="button button--primary" href="#work">
-              View selected work <ArrowDownRight aria-hidden="true" size={16} />
-            </Link>
-            <Link className="text-link" href="#contact">
-              Contact me <ArrowUpRight aria-hidden="true" size={15} />
-            </Link>
-          </div>
-          <a className="hero-scroll" href="#work">
-            <span>Scroll to explore</span>
-            <ArrowDown aria-hidden="true" size={15} />
-          </a>
         </div>
 
-        <div className="hero-visual" role="img" aria-label="Abstract graphic placeholder for a portrait">
-          <div className="hero-visual__orbit hero-visual__orbit--outer" aria-hidden="true" />
-          <div className="hero-visual__orbit hero-visual__orbit--inner" aria-hidden="true" />
-          <div className="hero-visual__disc" aria-hidden="true" />
-          <div className="hero-visual__cutout" aria-hidden="true" />
-          <div className="hero-visual__mark" aria-hidden="true">
-            <span>PSK</span>
-            <span>Design portfolio</span>
-          </div>
-          <div className="hero-visual__caption">
-            <span>01 / 06</span>
-            <span>Curiosity, made visible.</span>
-          </div>
-        </div>
+        <figure className="hero-artwork">
+          <Image
+            className="hero-artwork__image"
+            src="/images/hero-designer-collage-final.png"
+            alt="Creative collage portrait of the designer with colorful brush strokes."
+            width={1254}
+            height={1254}
+            preload
+            sizes="(max-width: 720px) 100vw, (max-width: 980px) 50vw, 40vw"
+          />
+          <a className="hero-cta" href="#contact">
+            <span>Hire me? (Why not?)</span>
+            <ArrowUpRight aria-hidden="true" size={18} strokeWidth={2.2} />
+          </a>
+        </figure>
+
+        <aside className="hero-side-note" aria-labelledby="hero-side-title">
+          <h2 id="hero-side-title">
+            <span>But does it</span>
+            <span>work?</span>
+          </h2>
+          <p>
+            Because pretty isn't enough. ✨
+          </p>
+        </aside>
       </Container>
     </section>
   );

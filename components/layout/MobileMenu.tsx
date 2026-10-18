@@ -1,8 +1,9 @@
 "use client";
 
-import { ArrowUpRight, Menu, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import Link from "next/link";
 import { useRef, type KeyboardEvent, type MouseEvent } from "react";
+import { ResumeDownloadButton } from "@/components/layout/ResumeDownloadButton";
 
 interface MobileMenuProps {
   items: readonly { label: string; href: string }[];
@@ -40,11 +41,10 @@ export function MobileMenu({ items, resumeUrl }: MobileMenuProps) {
             {item.label}
           </Link>
         ))}
-        {resumeUrl ? (
-          <a href={resumeUrl} download>
-            Resume <ArrowUpRight aria-hidden="true" size={15} />
-          </a>
-        ) : null}
+        <ResumeDownloadButton
+          className="resume-button resume-button--mobile"
+          resumeUrl={resumeUrl}
+        />
       </nav>
     </details>
   );
