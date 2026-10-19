@@ -1,8 +1,8 @@
 "use client";
 
 import { Menu, X } from "lucide-react";
-import Link from "next/link";
 import { useRef, type KeyboardEvent, type MouseEvent } from "react";
+import { ActiveNavLink } from "@/components/layout/ActiveNavLink";
 import { ResumeDownloadButton } from "@/components/layout/ResumeDownloadButton";
 
 interface MobileMenuProps {
@@ -37,9 +37,7 @@ export function MobileMenu({ items, resumeUrl }: MobileMenuProps) {
       </summary>
       <nav className="mobile-nav__panel" aria-label="Mobile navigation" onClick={handleClick}>
         {items.map((item) => (
-          <Link key={item.href} href={item.href}>
-            {item.label}
-          </Link>
+          <ActiveNavLink key={item.href} href={item.href} label={item.label} />
         ))}
         <ResumeDownloadButton
           className="resume-button resume-button--mobile"

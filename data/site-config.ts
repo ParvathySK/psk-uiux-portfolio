@@ -8,6 +8,7 @@ const configuredSocialProfiles: SocialProfile[] = [
   { label: "Behance", url: "https://www.behance.net/parvathyskumar2" },
   { label: "Dribbble", url: "https://dribbble.com/parvathy_s_kumar" },
   { label: "Instagram", url: "https://www.instagram.com/___parvathy_________?srtk=cGFrNzl5eGhhOWRo" },
+  { label: "Email", url: "mailto:parvathyskumarpsk@gmail.com" },
 ];
 
 export const siteConfig = {

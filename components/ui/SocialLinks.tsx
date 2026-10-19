@@ -1,20 +1,26 @@
+import { Mail } from "lucide-react";
 import { socialProfiles } from "@/data/site-config";
 
 interface SocialLinksProps {
   className?: string;
+  hideEmail?: boolean;
 }
 
-export function SocialLinks({ className = "" }: SocialLinksProps) {
-  if (socialProfiles.length === 0) return null;
+export function SocialLinks({ className = "", hideEmail = false }: SocialLinksProps) {
+  const profiles = hideEmail
+    ? socialProfiles.filter((profile) => profile.label !== "Email")
+    : socialProfiles;
+
+  if (profiles.length === 0) return null;
 
   return (
     <ul className={"social-links social-links--icons " + className}>
-      {socialProfiles.map((profile) => (
+      {profiles.map((profile) => (
         <li key={profile.label}>
           <a
             href={profile.url}
-            target="_blank"
-            rel="noreferrer"
+            target={profile.url.startsWith("https://") ? "_blank" : undefined}
+            rel={profile.url.startsWith("https://") ? "noreferrer" : undefined}
             aria-label={profile.label}
             title={profile.label}
           >
@@ -46,6 +52,10 @@ function SocialIcon({ label }: { label: string }) {
         <path d="M7 5.5c3.4 3.1 5.8 7.4 7.2 13M4 10.2c4.9.2 10.6-1.7 14.7-5M5.1 16.8c3.5-3.2 8.5-4.6 14-3.5" />
       </svg>
     );
+  }
+
+  if (label === "Email") {
+    return <Mail aria-hidden="true" size={24} strokeWidth={1.7} />;
   }
 
   return (

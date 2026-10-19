@@ -1,49 +1,60 @@
-import { ArrowUpRight } from "lucide-react";
 import type { Project } from "@/types/project";
+import { ArrowUpRight } from "lucide-react";
+import type { CSSProperties } from "react";
 import { ProjectArtwork } from "@/components/projects/ProjectArtwork";
 
 interface ProjectCardProps {
   project: Project;
-  featured?: boolean;
+  index: number;
 }
 
-export function ProjectCard({ project, featured = false }: ProjectCardProps) {
-  const cardContent = (
-    <>
-      <ProjectArtwork name={project.name} style={project.artwork} featured={featured} />
-      <div className="project-card__meta">
-        <div>
-          <span className="project-card__category">UI/UX · Product design</span>
-          <h3>{project.name}</h3>
-        </div>
-        {project.caseStudyUrl ? (
-          <span className="project-card__arrow" aria-hidden="true">
-            <ArrowUpRight size={18} strokeWidth={1.7} />
+export function ProjectCard({ project, index }: ProjectCardProps) {
+  return (
+    <article className="project-card project-card--horizontal">
+      <div
+        className="project-card__visual"
+        style={{
+          "--project-cover-image": project.coverImage ? `url("${project.coverImage}")` : "none",
+        } as CSSProperties}
+      >
+        <ProjectArtwork
+          name={project.name}
+          style={project.artwork}
+          coverImage={project.coverImage}
+          description={project.description}
+          showCaption={false}
+        />
+      </div>
+
+      <div className="project-card__details">
+        <div className="project-card__intro">
+          <span className="project-card__eyebrow">Selected project</span>
+          <span className="project-card__index" aria-label={`Project ${index + 1}`}>
+            {String(index + 1).padStart(2, "0")}
           </span>
+          <h2>{project.name}</h2>
+          {project.description ? <p>{project.description}</p> : null}
+        </div>
+
+        {project.disciplines?.length ? (
+          <ul className="project-card__disciplines" aria-label="Project focus">
+            {project.disciplines.slice(0, 3).map((discipline) => (
+              <li key={discipline}>{discipline}</li>
+            ))}
+          </ul>
+        ) : null}
+
+        {project.caseStudyUrl ? (
+          <a
+            className="project-card__action"
+            href={project.caseStudyUrl}
+            target={project.caseStudyUrl.startsWith("http") ? "_blank" : undefined}
+            rel={project.caseStudyUrl.startsWith("http") ? "noreferrer" : undefined}
+          >
+            View project <ArrowUpRight aria-hidden="true" size={17} />
+          </a>
         ) : null}
       </div>
-      {project.description ? <p className="project-card__description">{project.description}</p> : null}
-      {project.disciplines?.length ? (
-        <ul className="project-card__disciplines" aria-label="Design disciplines">
-          {project.disciplines.map((discipline) => <li key={discipline}>{discipline}</li>)}
-        </ul>
-      ) : null}
-    </>
-  );
-
-  return (
-    <article className={"project-card" + (featured ? " project-card--featured" : "") + (project.caseStudyUrl ? " project-card--linked" : "")}>
-      {project.caseStudyUrl ? (
-        <a
-          className="project-card__link"
-          href={project.caseStudyUrl}
-          target={project.caseStudyUrl.startsWith("http") ? "_blank" : undefined}
-          rel={project.caseStudyUrl.startsWith("http") ? "noreferrer" : undefined}
-          aria-label={"View " + project.name + " case study"}
-        >
-          {cardContent}
-        </a>
-      ) : cardContent}
     </article>
   );
 }

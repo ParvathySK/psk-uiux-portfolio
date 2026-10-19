@@ -1,14 +1,16 @@
+import Link from "next/link";
 import { Container } from "@/components/ui/Container";
 import { Reveal } from "@/components/ui/Reveal";
+import { ScrollReveal } from "@/components/ui/ScrollReveal";
 import { projects } from "@/data/projects";
 
 const featuredProject = projects.find((project) => project.slug === "sellmate-crm") ?? projects[0];
 
 const systemColors = [
   { name: "Lime", color: "#c9f36b" },
-  { name: "Coral", color: "#ed8c81" },
-  { name: "Teal", color: "#79b9b5" },
-  { name: "Lavender", color: "#d7d2eb" },
+  { name: "Sage", color: "#e9ebe1" },
+  { name: "Paper", color: "#f3f3ed" },
+  { name: "Coral", color: "#ee7553" },
   { name: "Ink", color: "#171a15" },
 ] as const;
 
@@ -24,8 +26,12 @@ export function SelectedWorkSection({ embedded = false }: { embedded?: boolean }
         </Reveal>
 
         <div className="work-showcase-grid">
-          <Reveal className="work-showcase-grid__item" delay={0.04}>
-            <article className="work-showcase-card">
+          <ScrollReveal className="work-showcase-grid__item" delay={0.04}>
+            <Link
+              className="work-showcase-card work-showcase-card--linked"
+              href="/projects"
+              aria-label="Explore featured projects"
+            >
               <div className="work-showcase-card__visual work-showcase-card__visual--project">
                 <div className="featured-project-preview" role="img" aria-label={`${featuredProject.name} project feature overview`}>
                   <div className="featured-project-preview__stage">
@@ -68,15 +74,19 @@ export function SelectedWorkSection({ embedded = false }: { embedded?: boolean }
                 </div>
                 <span className="work-showcase-card__arrow" aria-hidden="true" />
               </div>
-            </article>
-          </Reveal>
+            </Link>
+          </ScrollReveal>
 
-          <Reveal className="work-showcase-grid__item" delay={0.1}>
-            <article className="work-showcase-card">
+          <ScrollReveal className="work-showcase-grid__item" delay={0.1}>
+            <Link
+              className="work-showcase-card work-showcase-card--linked"
+              href="/design-system"
+              aria-label="Explore my design system"
+            >
               <div className="work-showcase-card__visual work-showcase-card__visual--system">
                 <div className="design-language-preview">
                   <div className="design-language-preview__palette">
-                    <div className="design-language-preview__section-label"><span>COLOR PALETTE</span><b>05 TOKENS</b></div>
+                    <div className="design-language-preview__section-label"><span>MY UI COLOR KIT</span><b>05 TOKENS</b></div>
                     <div className="design-language-preview__swatches" aria-hidden="true">
                       {systemColors.map((color) => (
                         <span key={color.name}><i style={{ backgroundColor: color.color }} /><small>{color.name}</small></span>
@@ -85,22 +95,22 @@ export function SelectedWorkSection({ embedded = false }: { embedded?: boolean }
                   </div>
                   <div className="design-language-preview__middle">
                     <div className="design-language-preview__type">
-                      <span className="design-language-preview__section-label">TYPE / MANROPE</span>
+                      <span className="design-language-preview__section-label">TYPE / HIERARCHY</span>
                       <strong>Aa</strong>
-                      <small>Thoughtful by design</small>
+                      <small>Clear type, calmer screens</small>
                       <i /><i />
                     </div>
                     <div className="design-language-preview__controls">
                       <span className="design-language-preview__section-label">BUTTONS &amp; ICONS</span>
-                      <span className="design-language-preview__button">Explore <b aria-hidden="true">↗</b></span>
-                      <div className="design-language-preview__icon-row" aria-hidden="true"><i>⌕</i><i>＋</i><i>♡</i></div>
+                      <span className="design-language-preview__button">Save changes <b aria-hidden="true">↗</b></span>
+                      <div className="design-language-preview__icon-row" aria-hidden="true"><i>⌕</i><i>＋</i><i>•••</i></div>
                     </div>
                   </div>
                   <div className="design-language-preview__component">
                     <div className="design-language-preview__component-heading"><span>COMPONENT / CARD</span><b>01</b></div>
                     <div className="design-language-preview__sample-card">
-                      <i aria-hidden="true">✦</i>
-                      <span><strong>Project overview</strong><small>Everything in one place</small></span>
+                      <i aria-hidden="true">A</i>
+                      <span><strong>A tidy little component</strong><small>Consistent down to the corners</small></span>
                       <b>↗</b>
                     </div>
                   </div>
@@ -109,15 +119,19 @@ export function SelectedWorkSection({ embedded = false }: { embedded?: boolean }
               <div className="work-showcase-card__content">
                 <div className="work-showcase-card__copy">
                   <h3>Design system &amp; style</h3>
-                  <p>Color · type · components</p>
+                  <p>My style · tokens · components</p>
                 </div>
                 <span className="work-showcase-card__arrow" aria-hidden="true" />
               </div>
-            </article>
-          </Reveal>
+            </Link>
+          </ScrollReveal>
 
-          <Reveal className="work-showcase-grid__item" delay={0.16}>
-            <article className="work-showcase-card">
+          <ScrollReveal className="work-showcase-grid__item" delay={0.16}>
+            <Link
+              className="work-showcase-card work-showcase-card--linked"
+              href="/my-story"
+              aria-label="Read my story: from software QA to UI/UX design"
+            >
               <div className="work-showcase-card__visual work-showcase-card__visual--journey">
                 <div className="journey-preview">
                   <div className="journey-preview__route">
@@ -153,8 +167,8 @@ export function SelectedWorkSection({ embedded = false }: { embedded?: boolean }
                 </div>
                 <span className="work-showcase-card__arrow" aria-hidden="true" />
               </div>
-            </article>
-          </Reveal>
+            </Link>
+          </ScrollReveal>
         </div>
     </>
   );

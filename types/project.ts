@@ -14,7 +14,7 @@ export interface Project {
   slug: string;
   name: string;
   artwork: ProjectArtworkStyle;
-  featured?: boolean;
+  coverImage?: string;
   description?: string;
   disciplines?: readonly string[];
   caseStudyUrl?: string;
