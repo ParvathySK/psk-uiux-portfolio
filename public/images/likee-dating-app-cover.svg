@@ -1,0 +1,251 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1216" viewBox="0 0 1800 1216" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="130" y1="70" x2="1705" y2="1195" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFF9F5"/>
+      <stop offset="1" stop-color="#F2E4E0"/>
+    </linearGradient>
+    <linearGradient id="halo" x1="800" y1="180" x2="1640" y2="1080" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F7C7C2" stop-opacity=".76"/>
+      <stop offset="1" stop-color="#F5D9CE" stop-opacity=".12"/>
+    </linearGradient>
+    <linearGradient id="photo" x1="1010" y1="312" x2="1280" y2="650" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F8C7B0"/>
+      <stop offset=".52" stop-color="#D88D7A"/>
+      <stop offset="1" stop-color="#71464A"/>
+    </linearGradient>
+    <linearGradient id="portraitBg" x1="1093" y1="342" x2="1290" y2="677" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F5D6C3"/>
+      <stop offset="1" stop-color="#D78E7E"/>
+    </linearGradient>
+    <linearGradient id="sidePhoto" x1="775" y1="402" x2="986" y2="710" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#E9D7C7"/>
+      <stop offset="1" stop-color="#C78F83"/>
+    </linearGradient>
+    <linearGradient id="frame" x1="920" y1="188" x2="1320" y2="1060" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#343033"/>
+      <stop offset=".5" stop-color="#08090C"/>
+      <stop offset="1" stop-color="#252126"/>
+    </linearGradient>
+    <filter id="shadow" x="560" y="90" width="1210" height="1090" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feColorMatrix in="SourceAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+      <feOffset dy="30"/>
+      <feGaussianBlur stdDeviation="25"/>
+      <feComposite in2="hardAlpha" operator="out"/>
+      <feColorMatrix values="0 0 0 0 0.25 0 0 0 0 0.13 0 0 0 0 0.15 0 0 0 0.2 0"/>
+      <feBlend in2="BackgroundImageFix" result="effect1_dropShadow"/>
+      <feBlend in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+    </filter>
+    <filter id="cardShadow" x="0" y="0" width="1" height="1" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feGaussianBlur stdDeviation="8"/>
+    </filter>
+    <clipPath id="mainScreen"><rect x="1032" y="184" width="340" height="828" rx="37"/></clipPath>
+    <clipPath id="leftScreen"><rect x="695" y="294" width="304" height="730" rx="33"/></clipPath>
+    <clipPath id="rightScreen"><rect x="1372" y="282" width="302" height="727" rx="33"/></clipPath>
+  </defs>
+
+  <rect width="1800" height="1216" fill="url(#bg)"/>
+  <circle cx="1485" cy="607" r="500" fill="url(#halo)"/>
+  <circle cx="1490" cy="605" r="418" stroke="#D6A39A" stroke-opacity=".34" stroke-width="2"/>
+  <circle cx="1490" cy="605" r="355" stroke="#D6A39A" stroke-opacity=".2" stroke-width="2" stroke-dasharray="4 13"/>
+  <path d="M0 1092C303 1014 523 1070 737 1161V1216H0V1092Z" fill="#F5E4DD"/>
+  <path d="M0 1119C301 1038 518 1091 735 1182" stroke="#E4B6AB" stroke-opacity=".65" stroke-width="3"/>
+  <circle cx="151" cy="1020" r="8" fill="#DE715D"/>
+  <circle cx="570" cy="164" r="6" fill="#DE715D"/>
+  <circle cx="1650" cy="194" r="7" fill="#E4A79A"/>
+  <path d="M1599 193c18-31 56-31 74 0-18 31-56 31-74 0Z" stroke="#C75A4A" stroke-width="3"/>
+  <path d="M1636 179c-15-18-43 0-37 14 5 13 37 34 37 34s32-21 37-34c6-14-22-32-37-14Z" fill="#E66F58"/>
+
+  <g font-family="Arial, Helvetica, sans-serif">
+    <g transform="translate(116 168)">
+      <rect width="54" height="54" rx="17" fill="#E85F50"/>
+      <path d="M27 15c-5-7-17 0-14 8 2 7 14 15 14 15s12-8 14-15c3-8-9-15-14-8Z" fill="#FFF7F4"/>
+      <text x="72" y="34" fill="#222020" font-size="34" font-weight="700" letter-spacing="-1.2">Likee</text>
+      <rect x="218" y="12" width="6" height="6" rx="3" fill="#E85F50"/>
+    </g>
+    <rect x="116" y="260" width="305" height="42" rx="21" fill="#FFFFFF" fill-opacity=".75" stroke="#E7D4CE"/>
+    <circle cx="139" cy="281" r="5" fill="#E45F50"/>
+    <text x="155" y="287" fill="#8D625A" font-size="15" font-weight="700" letter-spacing="2.6">DATING · NRI CONNECTIONS</text>
+
+    <text x="116" y="424" fill="#1D1C1C" font-size="72" font-weight="700" letter-spacing="-3.7">Meet beyond</text>
+    <text x="116" y="508" fill="#D95847" font-size="72" font-weight="700" letter-spacing="-3.7">borders.</text>
+    <path d="M118 541H473" stroke="#C9A9A1" stroke-width="2"/>
+    <text x="118" y="593" fill="#5D5452" font-size="25">A thoughtful way to meet someone who</text>
+    <text x="118" y="630" fill="#5D5452" font-size="25">shares your roots and your next chapter.</text>
+
+    <g transform="translate(118 704)">
+      <rect width="186" height="48" rx="24" fill="#F9E5E0"/>
+      <circle cx="25" cy="24" r="13" fill="#E66D5C"/>
+      <path d="M25 18c-3-4-9 0-7 4 1 4 7 8 7 8s6-4 7-8c2-4-4-8-7-4Z" fill="#FFF"/>
+      <text x="48" y="30" fill="#7A3D36" font-size="17" font-weight="600">Real connections</text>
+    </g>
+    <g transform="translate(318 704)">
+      <rect width="207" height="48" rx="24" fill="#FFFFFF" fill-opacity=".8" stroke="#E4D5D0"/>
+      <path d="M22 16v16m-6-6 6 6 6-6" stroke="#D86554" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="43" y="30" fill="#6C5B57" font-size="17" font-weight="600">Across the world</text>
+    </g>
+
+    <g transform="translate(118 850)">
+      <text x="0" y="0" fill="#8E7973" font-size="14" font-weight="700" letter-spacing="2.3">MADE FOR MEANINGFUL MEETINGS</text>
+      <path d="M0 24H330" stroke="#D8C5BF" stroke-width="1.5"/>
+      <circle cx="6" cy="57" r="5" fill="#DE715D"/>
+      <text x="22" y="63" fill="#5F5653" font-size="18">Culture, chemistry, and a little curiosity.</text>
+    </g>
+  </g>
+
+  <!-- Left device: discovery list -->
+  <g transform="rotate(-8 847 660)" filter="url(#shadow)">
+    <rect x="678" y="277" width="338" height="765" rx="53" fill="#171619"/>
+    <rect x="687" y="286" width="320" height="747" rx="46" fill="url(#frame)" stroke="#6B6263" stroke-width="2"/>
+    <g clip-path="url(#leftScreen)" font-family="Arial, Helvetica, sans-serif">
+      <rect x="695" y="294" width="304" height="730" fill="#FFFDFC"/>
+      <rect x="695" y="294" width="304" height="43" fill="#FFFDFC"/>
+      <text x="713" y="321" font-size="13" fill="#191819" font-weight="700">9:41</text>
+      <rect x="929" y="305" width="35" height="12" rx="6" fill="#191819"/>
+      <text x="713" y="372" font-size="22" fill="#242021" font-weight="700">Discover</text>
+      <circle cx="968" cy="365" r="15" fill="#FBEAE6"/>
+      <path d="M968 357v10m0 5h.01" stroke="#D96554" stroke-width="2" stroke-linecap="round"/>
+      <rect x="712" y="390" width="270" height="36" rx="18" fill="#F7F0EE"/>
+      <circle cx="730" cy="408" r="6" stroke="#9A8D89" stroke-width="1.8"/>
+      <path d="m735 413 5 5" stroke="#9A8D89" stroke-width="1.8"/>
+      <text x="747" y="413" font-size="12" fill="#9A8D89">Search by city or interest</text>
+      <text x="714" y="454" font-size="12" fill="#89807D" font-weight="700" letter-spacing="1.2">TODAY'S PICKS</text>
+      <rect x="712" y="468" width="270" height="279" rx="20" fill="#E9D9D1"/>
+      <rect x="712" y="468" width="270" height="177" rx="20" fill="url(#sidePhoto)"/>
+      <circle cx="851" cy="533" r="57" fill="#E8B09E"/>
+      <path d="M794 542c0-50 25-77 58-77 34 0 57 27 57 77v35h-115v-35Z" fill="#302429"/>
+      <ellipse cx="852" cy="540" rx="39" ry="48" fill="#C98168"/>
+      <path d="M811 533c3-37 22-58 48-58 19 0 35 12 43 30-13-4-25-13-32-24-10 16-30 27-59 28v24Z" fill="#2D2225"/>
+      <path d="M823 590c17 15 40 16 58 0l25 55H800l23-55Z" fill="#E68A6F"/>
+      <rect x="724" y="620" width="245" height="109" rx="15" fill="#FFFFFF"/>
+      <text x="740" y="650" font-size="18" fill="#252121" font-weight="700">Ananya, 28</text>
+      <circle cx="906" cy="643" r="7" fill="#5DB887"/>
+      <path d="m903 643 2 2 4-5" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="740" y="676" font-size="12" fill="#77706E">Born in Mumbai · lives in New York</text>
+      <rect x="740" y="691" width="102" height="23" rx="11.5" fill="#FBEAE6"/>
+      <text x="751" y="707" font-size="10" fill="#AE584B" font-weight="700">92% COMPATIBLE</text>
+      <circle cx="801" cy="785" r="23" fill="#FFFFFF" stroke="#E8DDD9"/>
+      <path d="M794 785h14m-7-7v14" stroke="#7E7775" stroke-width="2" stroke-linecap="round"/>
+      <circle cx="891" cy="785" r="23" fill="#E96453"/>
+      <path d="M891 778c-4-5-11 0-9 5 1 5 9 11 9 11s8-6 9-11c2-5-5-10-9-5Z" fill="#fff"/>
+      <path d="M710 994H984" stroke="#EEE7E4"/>
+      <g fill="#9B918E">
+        <circle cx="744" cy="1007" r="8"/><circle cx="817" cy="1007" r="8"/><circle cx="889" cy="1007" r="8"/><circle cx="960" cy="1007" r="8"/>
+      </g>
+      <circle cx="744" cy="1007" r="4" fill="#E36252"/>
+    </g>
+    <rect x="801" y="290" width="91" height="20" rx="10" fill="#08090B"/>
+  </g>
+
+  <!-- Right device: messages -->
+  <g transform="rotate(8 1520 648)" filter="url(#shadow)">
+    <rect x="1355" y="263" width="336" height="771" rx="52" fill="#171619"/>
+    <rect x="1364" y="272" width="318" height="753" rx="45" fill="url(#frame)" stroke="#6B6263" stroke-width="2"/>
+    <g clip-path="url(#rightScreen)" font-family="Arial, Helvetica, sans-serif">
+      <rect x="1372" y="282" width="302" height="727" fill="#FFFEFC"/>
+      <rect x="1372" y="282" width="302" height="47" fill="#FFFEFC"/>
+      <text x="1390" y="310" font-size="13" fill="#191819" font-weight="700">9:41</text>
+      <rect x="1601" y="294" width="35" height="12" rx="6" fill="#191819"/>
+      <text x="1390" y="369" font-size="22" fill="#252122" font-weight="700">Messages</text>
+      <circle cx="1637" cy="362" r="16" fill="#F9ECE9"/>
+      <path d="M1637 354v16m-8-8h16" stroke="#D96453" stroke-width="2" stroke-linecap="round"/>
+      <rect x="1389" y="389" width="268" height="37" rx="18.5" fill="#F6F0EE"/>
+      <circle cx="1407" cy="407" r="6" stroke="#9A8E8A" stroke-width="1.8"/>
+      <path d="m1412 412 5 5" stroke="#9A8E8A" stroke-width="1.8"/>
+      <text x="1424" y="412" font-size="12" fill="#9A8E8A">Search conversations</text>
+      <rect x="1389" y="450" width="268" height="70" rx="17" fill="#FFF8F5"/>
+      <circle cx="1424" cy="485" r="22" fill="#DEB09A"/>
+      <path d="M1404 486c2-19 10-28 21-28 12 0 20 9 21 28l-4 7h-34l-4-7Z" fill="#34262A"/>
+      <ellipse cx="1425" cy="487" rx="13" ry="16" fill="#C9846B"/>
+      <text x="1458" y="478" font-size="15" fill="#2C2524" font-weight="700">Rohan, 31</text>
+      <text x="1458" y="499" font-size="12" fill="#77706D">That sounds like home :)</text>
+      <circle cx="1634" cy="472" r="5" fill="#E66958"/>
+      <rect x="1389" y="531" width="268" height="70" rx="17" fill="#FFFFFF"/>
+      <circle cx="1424" cy="566" r="22" fill="#EBC7AF"/>
+      <path d="M1404 566c1-18 10-28 21-28s20 10 21 28l-4 8h-34l-4-8Z" fill="#372C29"/>
+      <ellipse cx="1425" cy="567" rx="13" ry="16" fill="#D79D7D"/>
+      <text x="1458" y="559" font-size="15" fill="#2C2524" font-weight="700">Maya, 29</text>
+      <text x="1458" y="580" font-size="12" fill="#77706D">I know a great chai spot</text>
+      <text x="1610" y="560" font-size="10" fill="#A49A96">10:42</text>
+      <rect x="1389" y="612" width="268" height="70" rx="17" fill="#FFFFFF"/>
+      <circle cx="1424" cy="647" r="22" fill="#E4C3B7"/>
+      <path d="M1404 647c1-19 10-28 21-28 12 0 20 10 21 28l-4 7h-34l-4-7Z" fill="#2A292D"/>
+      <ellipse cx="1425" cy="648" rx="13" ry="16" fill="#B9765C"/>
+      <text x="1458" y="640" font-size="15" fill="#2C2524" font-weight="700">Arjun, 30</text>
+      <text x="1458" y="661" font-size="12" fill="#77706D">Your playlist is so good</text>
+      <text x="1610" y="641" font-size="10" fill="#A49A96">Yesterday</text>
+      <text x="1390" y="730" font-size="12" fill="#8E827E" font-weight="700" letter-spacing="1.2">YOUR NEW CONNECTIONS</text>
+      <g>
+        <circle cx="1412" cy="774" r="19" fill="#D9A48B"/><circle cx="1466" cy="774" r="19" fill="#E6C5AF"/><circle cx="1520" cy="774" r="19" fill="#C68C78"/><circle cx="1574" cy="774" r="19" fill="#E1B4A6"/><circle cx="1628" cy="774" r="19" fill="#D3A391"/>
+        <circle cx="1412" cy="770" r="8" fill="#68463F"/><circle cx="1466" cy="770" r="8" fill="#533A38"/><circle cx="1520" cy="770" r="8" fill="#573A38"/><circle cx="1574" cy="770" r="8" fill="#64443F"/><circle cx="1628" cy="770" r="8" fill="#493537"/>
+        <path d="M1396 790c3-12 10-17 16-17s13 5 16 17m22 0c3-12 10-17 16-17s13 5 16 17m22 0c3-12 10-17 16-17s13 5 16 17m22 0c3-12 10-17 16-17s13 5 16 17m22 0c3-12 10-17 16-17s13 5 16 17" fill="#563B38"/>
+      </g>
+      <rect x="1378" y="979" width="290" height="30" fill="#FFFDFC"/>
+      <path d="M1380 941H1668" stroke="#EEE7E4"/>
+      <g fill="#9B918E"><circle cx="1415" cy="966" r="7"/><circle cx="1490" cy="966" r="7"/><circle cx="1564" cy="966" r="7"/><circle cx="1638" cy="966" r="7"/></g>
+      <circle cx="1564" cy="966" r="4" fill="#E36252"/>
+    </g>
+    <rect x="1472" y="276" width="91" height="20" rx="10" fill="#08090B"/>
+  </g>
+
+  <!-- Main device: profile and connection -->
+  <g filter="url(#shadow)">
+    <rect x="1014" y="160" width="376" height="882" rx="60" fill="#18171A"/>
+    <rect x="1024" y="170" width="356" height="862" rx="51" fill="url(#frame)" stroke="#756D6C" stroke-width="2"/>
+    <g clip-path="url(#mainScreen)" font-family="Arial, Helvetica, sans-serif">
+      <rect x="1032" y="184" width="340" height="828" fill="#FFFEFC"/>
+      <rect x="1032" y="184" width="340" height="44" fill="#FFFEFC"/>
+      <text x="1051" y="211" font-size="14" fill="#191819" font-weight="700">9:41</text>
+      <rect x="1309" y="196" width="39" height="13" rx="6.5" fill="#171619"/>
+      <text x="1051" y="264" font-size="21" fill="#252122" font-weight="700">likee</text>
+      <path d="M1110 250c-4-6-13 0-11 5 1 5 11 12 11 12s10-7 11-12c2-5-7-11-11-5Z" fill="#E86857"/>
+      <circle cx="1333" cy="258" r="17" fill="#F9EFEC"/>
+      <path d="M1333 251v14m-7-7h14" stroke="#D86454" stroke-width="2" stroke-linecap="round"/>
+      <text x="1051" y="310" font-size="27" fill="#242021" font-weight="700">A good match may</text>
+      <text x="1051" y="342" font-size="27" fill="#242021" font-weight="700">be closer than you think.</text>
+      <text x="1052" y="371" font-size="13" fill="#918783">A few people who share your story</text>
+      <rect x="1052" y="392" width="300" height="393" rx="24" fill="url(#portraitBg)"/>
+      <path d="M1052 657c71-113 178-93 300-189v317h-300V657Z" fill="#AF7169" fill-opacity=".42"/>
+      <circle cx="1198" cy="526" r="104" fill="#E8AD99"/>
+      <path d="M1096 542c-4-99 38-150 106-150 62 0 103 49 103 143v107h-209V542Z" fill="#282127"/>
+      <ellipse cx="1198" cy="539" rx="69" ry="89" fill="#C88069"/>
+      <path d="M1129 532c6-75 38-118 89-118 44 0 74 28 85 76-29-2-56-21-74-46-21 35-57 58-100 63v25Z" fill="#292027"/>
+      <path d="M1158 576c10 8 21 11 35 10m36-10c-10 8-21 11-35 10" stroke="#57352F" stroke-width="4" stroke-linecap="round"/>
+      <circle cx="1172" cy="548" r="5" fill="#382522"/><circle cx="1226" cy="548" r="5" fill="#382522"/>
+      <path d="M1191 564c4 5 9 5 13 0" stroke="#A45C50" stroke-width="3" stroke-linecap="round"/>
+      <path d="M1136 671c18-32 39-47 63-47 25 0 46 15 64 47l24 114h-172l21-114Z" fill="#E36B57"/>
+      <path d="M1068 706c57 25 125 33 209 20v59h-225l16-79Z" fill="#D99583" fill-opacity=".55"/>
+      <rect x="1068" y="715" width="173" height="47" rx="23.5" fill="#FFFDFC" fill-opacity=".95"/>
+      <circle cx="1094" cy="738" r="13" fill="#E7A08D"/>
+      <path d="M1094 732c-3-4-8 0-7 3 1 4 7 9 7 9s6-5 7-9c1-3-4-7-7-3Z" fill="#fff"/>
+      <text x="1116" y="743" font-size="12" fill="#61443E" font-weight="700">92% MATCH</text>
+      <circle cx="1316" cy="419" r="18" fill="#FFFFFF" fill-opacity=".9"/>
+      <path d="M1316 410c-4-5-10 0-8 4 1 5 8 10 8 10s7-5 8-10c2-4-4-9-8-4Z" fill="#E56353"/>
+      <text x="1052" y="822" font-size="25" fill="#272222" font-weight="700">Nisha, 28</text>
+      <circle cx="1185" cy="813" r="7" fill="#60B37F"/>
+      <path d="m1182 813 2 2 4-5" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="1053" y="849" font-size="14" fill="#77706D">Kochi roots · Toronto life</text>
+      <rect x="1053" y="869" width="132" height="28" rx="14" fill="#F8EFEC"/>
+      <text x="1067" y="887" font-size="11" fill="#8D5B51" font-weight="600">Travel · Family · Food</text>
+      <circle cx="1120" cy="946" r="31" fill="#FFFFFF" stroke="#E7DBD6" stroke-width="2"/>
+      <path d="M1110 936l20 20m0-20-20 20" stroke="#776D69" stroke-width="2.5" stroke-linecap="round"/>
+      <circle cx="1207" cy="946" r="31" fill="#E96453"/>
+      <path d="M1207 938c-5-7-14 0-12 6 2 6 12 14 12 14s10-8 12-14c2-6-7-13-12-6Z" fill="#fff"/>
+      <circle cx="1294" cy="946" r="31" fill="#FFFFFF" stroke="#E7DBD6" stroke-width="2"/>
+      <path d="M1286 946h16m-8-8v16" stroke="#776D69" stroke-width="2.5" stroke-linecap="round"/>
+      <path d="M1046 989H1358" stroke="#EEE7E4"/>
+      <circle cx="1094" cy="1001" r="6" fill="#E36252"/><circle cx="1178" cy="1001" r="6" fill="#A89C98"/><circle cx="1262" cy="1001" r="6" fill="#A89C98"/><circle cx="1340" cy="1001" r="6" fill="#A89C98"/>
+    </g>
+    <rect x="1141" y="176" width="104" height="23" rx="11.5" fill="#08090B"/>
+  </g>
+
+  <g font-family="Arial, Helvetica, sans-serif">
+    <g transform="translate(1461 1061) rotate(-4)">
+      <rect width="250" height="62" rx="16" fill="#FFFDFC" stroke="#E7D2CC" stroke-width="2"/>
+      <circle cx="31" cy="31" r="15" fill="#F8E7E2"/>
+      <path d="M31 25c-4-5-10 0-8 4 1 4 8 9 8 9s7-5 8-9c2-4-4-9-8-4Z" fill="#E36553"/>
+      <text x="57" y="27" fill="#6B5550" font-size="12" font-weight="700" letter-spacing="1.3">MEET WITH INTENTION</text>
+      <text x="57" y="46" fill="#322A28" font-size="16" font-weight="700">Find your kind of connection.</text>
+    </g>
+  </g>
+</svg>

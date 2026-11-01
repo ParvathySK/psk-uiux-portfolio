@@ -3,6 +3,7 @@ import { ArrowUpRight } from "lucide-react";
 import { Container } from "@/components/ui/Container";
 import { SocialLinks } from "@/components/ui/SocialLinks";
 import { HeroPixelAnimation } from "@/components/sections/HeroPixelAnimation";
+import { siteConfig } from "@/data/site-config";
 
 export function HeroSection() {
   return (
@@ -30,7 +31,11 @@ export function HeroSection() {
               sizes="(max-width: 720px) 100vw, (max-width: 980px) 50vw, 40vw"
             />
           </div>
-          <a className="hero-cta" href="#work">
+          <a
+            className="hero-cta"
+            href={`mailto:${siteConfig.email}?subject=Portfolio%20inquiry`}
+            title={`Email ${siteConfig.email}`}
+          >
             <span>Hire me (Why not?)</span>
             <ArrowUpRight aria-hidden="true" size={18} strokeWidth={2.2} />
           </a>

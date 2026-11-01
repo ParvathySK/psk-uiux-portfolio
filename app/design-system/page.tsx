@@ -184,7 +184,7 @@ export default function DesignSystemPage() {
         </Container>
       </section>
 
-      <Footer homeLinks />
+      <Footer />
     </main>
   );
 }

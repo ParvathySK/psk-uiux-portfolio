@@ -4,6 +4,7 @@ import { Menu, X } from "lucide-react";
 import { useRef, type KeyboardEvent, type MouseEvent } from "react";
 import { ActiveNavLink } from "@/components/layout/ActiveNavLink";
 import { ResumeDownloadButton } from "@/components/layout/ResumeDownloadButton";
+import { ThemeToggle } from "@/components/layout/ThemeToggle";
 
 interface MobileMenuProps {
   items: readonly { label: string; href: string }[];
@@ -43,6 +44,7 @@ export function MobileMenu({ items, resumeUrl }: MobileMenuProps) {
           className="resume-button resume-button--mobile"
           resumeUrl={resumeUrl}
         />
+        <ThemeToggle />
       </nav>
     </details>
   );

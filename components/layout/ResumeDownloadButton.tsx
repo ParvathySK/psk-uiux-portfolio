@@ -1,5 +1,3 @@
-import { Download } from "lucide-react";
-
 interface ResumeDownloadButtonProps {
   resumeUrl: string | null;
   className?: string;
@@ -7,10 +5,7 @@ interface ResumeDownloadButtonProps {
 
 export function ResumeDownloadButton({ resumeUrl, className }: ResumeDownloadButtonProps) {
   const label = (
-    <>
-      <span>Download resume</span>
-      <Download aria-hidden="true" size={15} />
-    </>
+    <span>CV</span>
   );
 
   if (!resumeUrl) {
@@ -20,7 +15,7 @@ export function ResumeDownloadButton({ resumeUrl, className }: ResumeDownloadBut
         type="button"
         disabled
         title="Add a resume file in data/site-config.ts to enable this download."
-        aria-label="Download resume (not configured)"
+        aria-label="CV download (not configured)"
       >
         {label}
       </button>
@@ -28,7 +23,7 @@ export function ResumeDownloadButton({ resumeUrl, className }: ResumeDownloadBut
   }
 
   return (
-    <a className={className} href={resumeUrl} download>
+    <a className={className} href="/cv" aria-label="View CV and download resume">
       {label}
     </a>
   );

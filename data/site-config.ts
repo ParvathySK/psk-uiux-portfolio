@@ -14,8 +14,8 @@ const configuredSocialProfiles: SocialProfile[] = [
 export const siteConfig = {
   wordmark: "PSK",
   role: "UI/UX & Product Designer",
-  email: null as string | null,
-  resumeUrl: null as string | null,
+  email: "parvathyskumarpsk@gmail.com" as string | null,
+  resumeUrl: "/parvathy-uiux-resume.pdf" as string | null,
   socialProfiles: configuredSocialProfiles,
   metadata: {
     title: "PSK — UI/UX & Product Designer",
