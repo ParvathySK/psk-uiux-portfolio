@@ -59,7 +59,7 @@ export function HomePreloader() {
           pixelStartTimer = window.setTimeout(() => {
             document.documentElement.dataset.homePixels = "true";
             window.dispatchEvent(new Event("home:pixel-start"));
-          }, reducedMotion ? 0 : 2750);
+          }, reducedMotion ? 0 : 650);
         }, reducedMotion ? 0 : 440);
       }, reducedMotion ? 40 : 120);
     };

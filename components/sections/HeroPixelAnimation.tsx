@@ -41,8 +41,8 @@ export function HeroPixelAnimation() {
       for (const particle of particles) {
         if (!reduceMotion && time >= particle.nextBlinkAt) {
           particle.blinkStartedAt = time;
-          particle.blinkDuration = 320 + Math.random() * 330;
-          particle.nextBlinkAt = time + particle.blinkDuration + 1600 + Math.random() * 3000;
+          particle.blinkDuration = 200 + Math.random() * 160;
+          particle.nextBlinkAt = time + particle.blinkDuration + 800 + Math.random() * 1700;
         }
 
         const blinkProgress = (time - particle.blinkStartedAt) / particle.blinkDuration;
@@ -92,7 +92,7 @@ export function HeroPixelAnimation() {
           y: row * CELL_STEP,
           strength: 0.55 + Math.random() * 0.45,
           color: Math.random() < 0.68 ? ACCENT_COLOR : SECONDARY_COLOR,
-          nextBlinkAt: blinkEpoch + Math.random() * 3500,
+          nextBlinkAt: blinkEpoch + Math.random() * 1800,
           blinkStartedAt: -1,
           blinkDuration: 300,
         });
