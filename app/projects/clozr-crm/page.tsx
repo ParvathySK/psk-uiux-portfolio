@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
-import Link from "next/link";
-import { ArrowLeft, LifeBuoy, PanelsTopLeft, Plus, Search, Workflow } from "lucide-react";
+import { LifeBuoy, PanelsTopLeft, Plus, Search, Workflow } from "lucide-react";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { ReadNextProjects } from "@/components/projects/ReadNextProjects";
@@ -62,11 +61,6 @@ export default function ClozrCrmCaseStudyPage() {
       <main className="clozr-study" id="top">
         <section className="clozr-study__hero" aria-labelledby="clozr-title">
           <Container size="wide">
-            <Link className="clozr-study__back" href="/#work">
-              <ArrowLeft size={15} aria-hidden="true" />
-              <span>Selected work</span>
-            </Link>
-
             <div className="clozr-study__heading">
               <div>
                 <p className="clozr-study__eyebrow">Product design · SaaS · Mobile</p>

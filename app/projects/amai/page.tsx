@@ -1,9 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
-import Link from "next/link";
 import {
-  ArrowDown,
-  ArrowLeft,
   ArrowUpRight,
   CalendarDays,
   HeartPulse,
@@ -85,11 +82,6 @@ export default function AmaiCaseStudyPage() {
       <main className="amai-case" id="top">
         <section className="amai-case__hero" aria-labelledby="amai-title">
           <Container size="wide">
-            <Link className="amai-case__back" href="/#work">
-              <ArrowLeft size={15} aria-hidden="true" />
-              <span>Selected work</span>
-            </Link>
-
             <div className="amai-case__intro">
               <div>
                 <p className="amai-case__eyebrow">AMAI · Membership · Events · Benefits</p>
@@ -116,9 +108,6 @@ export default function AmaiCaseStudyPage() {
                 sizes="(max-width: 760px) 100vw, 92vw"
               />
             </figure>
-            <a className="amai-case__scroll" href="#journey">
-              <span>Explore the member journey</span><ArrowDown size={14} aria-hidden="true" />
-            </a>
           </Container>
         </section>
 

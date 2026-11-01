@@ -31,15 +31,6 @@ export function HeroSection() {
               sizes="(max-width: 720px) 100vw, (max-width: 980px) 50vw, 40vw"
             />
           </div>
-          <a
-            className="hero-cta"
-            href={`mailto:${siteConfig.email}?subject=Portfolio%20inquiry`}
-            title={`Email ${siteConfig.email}`}
-          >
-            <span>Hire me (Why not?)</span>
-            <ArrowUpRight aria-hidden="true" size={18} strokeWidth={2.2} />
-          </a>
-          <SocialLinks className="hero-social-links" hideEmail />
         </figure>
 
         <aside className="hero-side-note" aria-labelledby="hero-side-title">
@@ -51,6 +42,18 @@ export function HeroSection() {
             Because pretty isn&apos;t enough. ✨
           </p>
         </aside>
+
+        <div className="hero-actions">
+          <a
+            className="hero-cta"
+            href={`mailto:${siteConfig.email}?subject=Portfolio%20inquiry`}
+            title={`Email ${siteConfig.email}`}
+          >
+            <span>Hire me (Why not?)</span>
+            <ArrowUpRight aria-hidden="true" size={18} strokeWidth={2.2} />
+          </a>
+          <SocialLinks className="hero-social-links" hideEmail />
+        </div>
       </Container>
       <div className="hero-dots" aria-hidden="true">
         <i className="hero-dot" /><i className="hero-dot" /><i className="hero-dot" />
