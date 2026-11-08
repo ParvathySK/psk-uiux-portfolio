@@ -3,6 +3,7 @@ import { JourneySection } from "@/components/sections/JourneySection";
 import { Footer } from "@/components/layout/Footer";
 import { Navbar } from "@/components/layout/Navbar";
 import { HomePreloader } from "@/components/layout/HomePreloader";
+import { CaseStudiesSection } from "@/components/sections/CaseStudiesSection";
 
 export default function HomePage() {
   return (
@@ -14,6 +15,7 @@ export default function HomePage() {
       </div>
       <main>
         <JourneySection />
+        <CaseStudiesSection />
       </main>
       <Footer />
     </>

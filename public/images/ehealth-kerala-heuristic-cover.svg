@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 810" fill="none">
+  <defs>
+    <linearGradient id="paper" x1="0" y1="0" x2="1200" y2="810" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F8FAF5"/>
+      <stop offset="1" stop-color="#EEF3E8"/>
+    </linearGradient>
+    <linearGradient id="green" x1="130" y1="450" x2="1040" y2="740" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#E8F2DE"/>
+      <stop offset="1" stop-color="#F2F7EC"/>
+    </linearGradient>
+    <filter id="shadow" x="42" y="31" width="1116" height="766" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feColorMatrix in="SourceAlpha" result="hardAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+      <feOffset dy="9"/>
+      <feGaussianBlur stdDeviation="11"/>
+      <feComposite in2="hardAlpha" operator="out"/>
+      <feColorMatrix values="0 0 0 0 0.09 0 0 0 0 0.16 0 0 0 0 0.08 0 0 0 0.1 0"/>
+      <feBlend in2="BackgroundImageFix" result="shadow"/>
+      <feBlend in="SourceGraphic" in2="shadow" result="shape"/>
+    </filter>
+  </defs>
+
+  <path fill="url(#paper)" d="M0 0h1200v810H0z"/>
+  <circle cx="1085" cy="84" r="240" fill="#E7F0DF" fill-opacity=".48"/>
+  <circle cx="78" cy="754" r="200" fill="#EEF3E8" fill-opacity=".72"/>
+
+  <g filter="url(#shadow)">
+    <rect x="66" y="52" width="1068" height="706" rx="20" fill="#fff"/>
+    <rect x="66.5" y="52.5" width="1067" height="705" rx="19.5" stroke="#DCE5D5"/>
+
+    <text x="106" y="96" fill="#315E2C" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="700">eHealth Kerala</text>
+    <text x="1092" y="96" text-anchor="end" fill="#7C8977" font-family="Inter, Arial, sans-serif" font-size="10" font-weight="700" letter-spacing="1.8">CASE STUDY  /  01</text>
+    <path d="M106 119h988" stroke="#E6EBE1"/>
+
+    <text x="600" y="169" text-anchor="middle" fill="#71816D" font-family="Inter, Arial, sans-serif" font-size="10" font-weight="700" letter-spacing="2.2">HEURISTIC EVALUATION</text>
+    <text x="600" y="213" text-anchor="middle" fill="#274D22" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="700">Heuristic Evaluation Case Study</text>
+    <text x="600" y="241" text-anchor="middle" fill="#596556" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="500">eHealth Kerala Portal · Hospital Appointment &amp; Health Services</text>
+    <text x="600" y="268" text-anchor="middle" fill="#778173" font-family="Inter, Arial, sans-serif" font-size="12">Usability analysis using Nielsen’s 10 Heuristic Principles to improve citizen access to public healthcare.</text>
+
+    <rect x="138" y="291" width="924" height="35" rx="7" fill="#F1F3F0"/>
+    <circle cx="158" cy="308.5" r="4" fill="#4F8435"/>
+    <text x="174" y="312" fill="#55614F" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="600">Evaluated website</text>
+    <text x="1042" y="312" text-anchor="end" fill="#315E2C" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="600">ehealth.kerala.gov.in</text>
+
+    <g font-family="Inter, Arial, sans-serif" font-size="9" font-weight="700" letter-spacing=".4">
+      <rect x="365" y="345" width="118" height="25" rx="12.5" fill="#397A2D"/><text x="424" y="361" text-anchor="middle" fill="#fff">EXPERT REVIEW</text>
+      <rect x="493" y="345" width="120" height="25" rx="12.5" fill="#397A2D"/><text x="553" y="361" text-anchor="middle" fill="#fff">UX HEURISTICS</text>
+      <rect x="623" y="345" width="145" height="25" rx="12.5" fill="#397A2D"/><text x="695.5" y="361" text-anchor="middle" fill="#fff">GOVERNMENT PORTAL</text>
+      <rect x="778" y="345" width="126" height="25" rx="12.5" fill="#397A2D"/><text x="841" y="361" text-anchor="middle" fill="#fff">HEALTHCARE UX</text>
+    </g>
+
+    <rect x="106" y="393" width="988" height="78" rx="10" fill="#F7F9F5" stroke="#E5EBE0"/>
+    <path d="M353 408v48M600 408v48M847 408v48" stroke="#E0E7DC"/>
+    <g font-family="Inter, Arial, sans-serif">
+      <text x="128" y="421" fill="#7B8775" font-size="9" font-weight="700" letter-spacing="1.1">DOMAIN</text>
+      <text x="128" y="445" fill="#283426" font-size="13" font-weight="600">Government · Healthcare</text>
+      <text x="375" y="421" fill="#7B8775" font-size="9" font-weight="700" letter-spacing="1.1">PLATFORM</text>
+      <text x="375" y="445" fill="#283426" font-size="13" font-weight="600">Web portal</text>
+      <text x="622" y="421" fill="#7B8775" font-size="9" font-weight="700" letter-spacing="1.1">METHOD</text>
+      <text x="622" y="445" fill="#283426" font-size="13" font-weight="600">Nielsen’s 10 heuristics</text>
+      <text x="869" y="421" fill="#7B8775" font-size="9" font-weight="700" letter-spacing="1.1">MY ROLE</text>
+      <text x="869" y="445" fill="#283426" font-size="13" font-weight="600">UX designer · evaluator</text>
+    </g>
+
+    <text x="106" y="511" fill="#315E2C" font-family="Inter, Arial, sans-serif" font-size="19" font-weight="700">Project overview</text>
+    <text x="1094" y="510" text-anchor="end" fill="#879182" font-family="Inter, Arial, sans-serif" font-size="9" font-weight="700" letter-spacing="1.2">01  /  UNDERSTAND THE EXPERIENCE</text>
+    <path d="M106 526h988" stroke="#D9E4D2"/>
+
+    <rect x="106" y="547" width="988" height="164" rx="12" fill="url(#green)"/>
+    <text x="132" y="578" fill="#315E2C" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="700" letter-spacing=".6">A clearer route to care</text>
+    <text x="132" y="601" fill="#586653" font-family="Inter, Arial, sans-serif" font-size="11">The portal supports citizens looking for health information and appointment services.</text>
+    <text x="132" y="619" fill="#586653" font-family="Inter, Arial, sans-serif" font-size="11">I reviewed key journeys to find points where people could lose clarity or confidence.</text>
+    <text x="132" y="656" fill="#71816D" font-family="Inter, Arial, sans-serif" font-size="9" font-weight="700" letter-spacing="1.1">EVALUATION LENS</text>
+
+    <g font-family="Inter, Arial, sans-serif">
+      <rect x="132" y="670" width="274" height="24" rx="6" fill="#fff" fill-opacity=".88"/>
+      <circle cx="148" cy="682" r="5" fill="#4F8435"/><text x="161" y="686" fill="#34472F" font-size="9" font-weight="600">No user dependency</text>
+      <rect x="418" y="670" width="274" height="24" rx="6" fill="#fff" fill-opacity=".88"/>
+      <circle cx="434" cy="682" r="5" fill="#4F8435"/><text x="447" y="686" fill="#34472F" font-size="9" font-weight="600">Rapid assessment</text>
+      <rect x="704" y="670" width="364" height="24" rx="6" fill="#fff" fill-opacity=".88"/>
+      <circle cx="720" cy="682" r="5" fill="#4F8435"/><text x="733" y="686" fill="#34472F" font-size="9" font-weight="600">Systematic review across core user journeys</text>
+    </g>
+
+    <text x="106" y="735" fill="#71816D" font-family="Inter, Arial, sans-serif" font-size="9" font-weight="700" letter-spacing="1.2">RESEARCH  ·  EVALUATION  ·  BETTER ACCESS TO CARE</text>
+  </g>
+</svg>

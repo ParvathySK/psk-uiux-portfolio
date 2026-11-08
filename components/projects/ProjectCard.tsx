@@ -1,12 +1,14 @@
 import Link from "next/link";
+import { ChevronRight } from "lucide-react";
 import type { Project } from "@/types/project";
 import { ProjectArtwork } from "@/components/projects/ProjectArtwork";
 
 interface ProjectCardProps {
   project: Project;
+  showArrow?: boolean;
 }
 
-export function ProjectCard({ project }: ProjectCardProps) {
+export function ProjectCard({ project, showArrow = false }: ProjectCardProps) {
   const hasProjectLink = Boolean(project.caseStudyUrl);
   const isExternalLink = project.caseStudyUrl?.startsWith("http") ?? false;
 
@@ -27,6 +29,11 @@ export function ProjectCard({ project }: ProjectCardProps) {
           </span>
           <h2>{project.name}</h2>
         </div>
+        {showArrow ? (
+          <span className="project-card__action-arrow" aria-hidden="true">
+            <ChevronRight size={22} strokeWidth={1.8} />
+          </span>
+        ) : null}
       </div>
     </>
   );
